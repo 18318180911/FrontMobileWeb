@@ -1,0 +1,156 @@
+body{
+    background-color: #f0f0f0;
+  }
+/* 轮播图 */
+.bannder img{
+    width: 100vw;
+  }
+  /* 乐园活动 */
+  /* 标题 */
+.title {
+      color: #3c3c3c;
+      font-size: 3.7333vw;
+      padding: 2.6667vw 4vw;
+  }
+  .content-img {
+      position: relative;
+  }
+.content-img img{
+    width: 100vw;
+}
+.content-img::before {
+    content: "进行中";
+    position: absolute;
+    background-image: url(../images/status_active.png);
+    background-size: 18.1333vw 7.7333vw;
+    color: #fff;
+    left: 4vw;
+    top: -1.3333vw;
+    width: 18.1333vw;
+    height: 7.7333vw;
+    line-height: 7.7333vw;
+    text-align: center;
+    font-size: 3.2vw;
+}
+.content-img .icon-shoucang1 {
+    position: absolute;
+    top: 4vw;
+    right: 4.8vw;
+    font-size: 6.4vw;
+    color: #fff;
+}
+.details {
+    background-color: #fff;
+    padding: 2.1333vw 4vw;
+}
+.details-top {
+    display: flex;
+    font-size: 4vw;
+    justify-content: space-between;
+    margin-bottom: 3.2vw;
+}
+.details-top span:nth-child(1){
+    width: 78.6667vw;
+    height: 11.4667vw;
+    color: #3c3c3c;
+}
+.details-top span:nth-child(2){
+    color: #FE6249 ;
+}
+.content-time {
+    color: #b4b4b4;
+    font-size: 2.9333vw;
+}
+.content-time span:nth-child(2) {
+    margin-left: 2.6667vw;
+}
+.content1 {
+    margin-top: 2.6667vw;
+}
+.content1 .content-img::before {
+    content: "已截至";
+    position: absolute;
+    background-image: url(../images/status_default.png);
+    background-size: 18.1333vw 7.7333vw;
+    color: #fff;
+    left: 4vw;
+    top: -1.3333vw;
+    width: 18.1333vw;
+    height: 7.7333vw;
+    line-height: 7.7333vw;
+    text-align: center;
+    font-size: 3.2vw;
+}
+.content1 .content-img .icon-shoucang1 {
+    position: absolute;
+    top: 4vw;
+    right: 4.8vw;
+    font-size: 6.4vw;
+    color: #fff;
+}
+.content2 {
+    margin-top: 2.6667vw;
+    margin-bottom: 4vw;
+}
+.content2 .content-img::before {
+    content: "已结束";
+    position: absolute;
+    background-image: url(../images/status_default.png);
+    background-size: 18.1333vw 7.7333vw;
+    color: #fff;
+    left: 4vw;
+    top: -1.3333vw;
+    width: 18.1333vw;
+    height: 7.7333vw;
+    line-height: 7.7333vw;
+    text-align: center;
+    font-size: 3.2vw;
+}
+.content2 .content-img img:nth-child(2) {
+    position: absolute;
+    width: 6.4vw;
+    height: 6.4vw;
+    top: 4vw;
+    right: 4.8vw;
+    font-size: 6.4vw;
+    color: #fff;
+}
+/* 底部 */
+.buttom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 13.0667vw;
+    /* margin-top: 4vw; */
+    padding: 1.6vw 14.9333vw;
+    background-color: #FECA49;
+    display: flex;
+    justify-content: space-between;
+}
+.buttom-left p:nth-child(2){
+    color: #fff;
+    font-size: 2.9333vw;
+}
+.buttom-left .icon-index-copy{
+    color: #fff;
+    width: 6.5067vw;
+    height: 5.6533vw;
+    text-align: center;
+}
+.buttom-center .icon-youhuiquan{
+    color: #D78B09;
+    width: 6.5067vw;
+    height: 5.6533vw;
+    text-align: center;
+}
+.buttom-right .icon-7{
+    color: #D78B09;
+    width: 6.4533vw;
+    height: 6.4533vw;
+    text-align: center;
+}
+.font{
+    color: #D78B09;
+    font-size: 2.9333vw;
+}

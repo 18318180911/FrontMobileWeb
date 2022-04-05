@@ -1,0 +1,24 @@
+div {
+  width: 40px;
+  width: 900px;
+  height: 60px;
+  height: 10px;
+  height: 3px;
+  color: pink;
+  border: 1px solid pink;
+}
+p {
+  color: pink;
+}
+div {
+  background-image: url(2.png);
+  box-sizing: 100%;
+  background-repeat: no-repeat;
+  background-position: -300px 30px;
+}
+p {
+  background-image: url(2.png);
+  box-sizing: 100%;
+  background-repeat: no-repeat;
+  background-position: -300px 30px;
+}

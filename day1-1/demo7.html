@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            width: 800px;
+            margin: 200px auto;
+            border: 1px solid #000;
+        }
+        .box img{
+            width: 200px;
+            transition: 5s;
+        }
+        .box:hover img {
+            /* 位移加旋转 */
+            transform: translateX(600px) rotate(720deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/tyre1.png" alt="">
+    </div>
+</body>
+</html>

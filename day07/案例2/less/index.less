@@ -1,0 +1,168 @@
+// 轮播图
+.carousel {
+    img {
+        height: 100%!important;
+    }
+    @media (max-width: 992px){
+        .item {
+            height: 400px;
+        }
+    }
+    @media (max-width: 768px){
+        .item {
+            height: 250px;
+        }
+    }
+    @media (min-width: 992px){
+        .item {
+            height: 500px;
+        }
+    }
+    .carousel-indicators{
+        li {
+            width: 50px;
+            height: 2px;
+        }
+    }
+}
+
+// 头部
+@color: #f2b535;
+
+.navbar1{
+    background-color: transparent;
+    border: 0;
+    .navbar-header {
+        a {
+            display: block;
+            img{
+                margin-top: -8px;
+                width: 200px;
+                height: 40px;
+            }
+        }
+    }
+    .collapse {
+        li {
+            a {
+                color: #fff;
+                font-size: 16px;
+            }
+            a:hover{
+                color: @color;
+            }
+        }
+        li:nth-child(1) a{
+            color: @color;
+            border-bottom: 3px solid @color;
+        }
+        li:nth-child(4) a{
+            color: @color;
+        }
+        li:nth-child(4) a::before {
+                content: "";
+                display: inline-block;
+                position: relative;
+                top: 2px;
+                left: -2px;
+                width: 13px;
+                height: 15px;
+                // background-color: red;
+                background-image: url(../images/fire.png);
+                background-size: 100% 100%;
+            }
+        }
+}
+// 开源项目
+@color1: #919191;
+.a{
+    display: block;
+    text-decoration: none;
+    height: 200px;
+    color: #fff;
+}
+.project {
+    margin-top: 80px;
+    text-align: center;
+    span {
+        font-family: Segoe UI Light,Microsoft YaHei,Arial,Helvetica,sans-serif;
+        color: @color1;
+    }
+    p:nth-child(2) {
+        font-size: 16px;
+        color: @color1;
+    }
+    .container {
+        margin-top: 10px;
+        div:nth-child(1) a {
+                .a();
+                background-color: #70c3ff;
+                img {
+                    margin-top: 30px;
+                }
+        }
+        div:nth-child(2) a {
+            .a();
+            background-color: #fd6a7f;
+            img {
+                margin-top: 30px;
+                width: 160px;
+                height: 60px;
+            }
+        }
+        div:nth-child(3) a {
+            .a();
+            background-color: #7f8ea0;
+            img {
+                margin-top: 30px;
+                width: 60px;
+                height: 60px;
+            }
+        }
+        div:nth-child(4) a {
+            .a();
+            background-color: #89d04f;
+            img {
+                margin-top: 30px;
+                width: 63px;
+                height: 60px;
+            }
+        }
+    }
+    .i-more {
+        margin-top: 15px;
+        a {
+            font-size: 14px;
+            background-color: #e1e1e1;
+        }
+    }
+    .container {
+        .row {
+            div {
+                
+                a {
+                    background-color: #fff;
+                    div {
+                        border: 1px solid #ccc;
+                        img {
+                            margin-top: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        p {
+                            text-align: left;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .i-more1 {
+        margin-top: 50px;
+        a {
+            font-size: 14px;
+            background-color: #e1e1e1;
+        }
+    }
+}

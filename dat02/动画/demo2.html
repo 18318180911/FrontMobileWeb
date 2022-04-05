@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            background-color: purple;
+            margin: 100px auto;
+            /* 动画名称，延长时间，延迟时间，执行完毕时状态，重复播放 */
+            animation: ani_1 1s 3s both infinite reverse;
+        }
+        div:hover {
+            /* 设置动画播放状态 */
+            animation-play-state: paused;
+        }
+        @keyframes ani_1 {
+            0% {
+                background-color: pink;
+            }
+            100% {
+                background-color: aqua;
+                border-radius: 50%;
+                margin-left: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>动画体验</div>
+</body>
+</html>

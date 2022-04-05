@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            background-color: #ccc;
+            text-align: center;
+            /* 把图片往下移动 */
+            padding-top: 100px;
+            /* 元素进大远小，添加视距属性，给被观察的父元素添加 */
+            perspective: 1000px;
+
+        }
+        .box img {
+            /* Z */
+            transform: rotateZ(0deg);
+            /* transform: rotateY(0deg); */
+            /* transform: rotateX(0deg); */
+            transition: 2s;
+        }
+        .box img:hover {
+            transform: rotateZ(360deg);
+            /* transform: rotateY(360deg); */
+            /* transform: rotateX(360deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/pukepai.png" alt="">
+    </div>
+</body>
+</html>

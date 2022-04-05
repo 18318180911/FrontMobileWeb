@@ -1,0 +1,155 @@
+.carousel img {
+  height: 100%!important;
+}
+@media (max-width: 992px) {
+  .carousel .item {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel .item {
+    height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel .item {
+    height: 500px;
+  }
+}
+.carousel .carousel-indicators li {
+  width: 50px;
+  height: 2px;
+}
+.navbar1 {
+  background-color: transparent;
+  border: 0;
+}
+.navbar1 .navbar-header a {
+  display: block;
+}
+.navbar1 .navbar-header a img {
+  margin-top: -8px;
+  width: 200px;
+  height: 40px;
+}
+.navbar1 .collapse li a {
+  color: #fff;
+  font-size: 16px;
+}
+.navbar1 .collapse li a:hover {
+  color: #f2b535;
+}
+.navbar1 .collapse li:nth-child(1) a {
+  color: #f2b535;
+  border-bottom: 3px solid #f2b535;
+}
+.navbar1 .collapse li:nth-child(4) a {
+  color: #f2b535;
+}
+.navbar1 .collapse li:nth-child(4) a::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  left: -2px;
+  width: 13px;
+  height: 15px;
+  background-image: url(../images/fire.png);
+  background-size: 100% 100%;
+}
+.a {
+  display: block;
+  text-decoration: none;
+  height: 200px;
+  color: #fff;
+}
+.project {
+  margin-top: 80px;
+  text-align: center;
+}
+.project span {
+  font-family: Segoe UI Light, Microsoft YaHei, Arial, Helvetica, sans-serif;
+  color: #919191;
+}
+.project p:nth-child(2) {
+  font-size: 16px;
+  color: #919191;
+}
+.project .container {
+  margin-top: 10px;
+}
+.project .container div:nth-child(1) a {
+  display: block;
+  text-decoration: none;
+  height: 200px;
+  color: #fff;
+  background-color: #70c3ff;
+}
+.project .container div:nth-child(1) a img {
+  margin-top: 30px;
+}
+.project .container div:nth-child(2) a {
+  display: block;
+  text-decoration: none;
+  height: 200px;
+  color: #fff;
+  background-color: #fd6a7f;
+}
+.project .container div:nth-child(2) a img {
+  margin-top: 30px;
+  width: 160px;
+  height: 60px;
+}
+.project .container div:nth-child(3) a {
+  display: block;
+  text-decoration: none;
+  height: 200px;
+  color: #fff;
+  background-color: #7f8ea0;
+}
+.project .container div:nth-child(3) a img {
+  margin-top: 30px;
+  width: 60px;
+  height: 60px;
+}
+.project .container div:nth-child(4) a {
+  display: block;
+  text-decoration: none;
+  height: 200px;
+  color: #fff;
+  background-color: #89d04f;
+}
+.project .container div:nth-child(4) a img {
+  margin-top: 30px;
+  width: 63px;
+  height: 60px;
+}
+.project .i-more {
+  margin-top: 15px;
+}
+.project .i-more a {
+  font-size: 14px;
+  background-color: #e1e1e1;
+}
+.project .container .row div a {
+  background-color: #fff;
+}
+.project .container .row div a div {
+  border: 1px solid #ccc;
+}
+.project .container .row div a div img {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+}
+.project .container .row div a div p {
+  text-align: left;
+  color: #000;
+}
+.project .i-more1 {
+  margin-top: 50px;
+}
+.project .i-more1 a {
+  font-size: 14px;
+  background-color: #e1e1e1;
+}

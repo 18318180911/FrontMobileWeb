@@ -1,0 +1,172 @@
+@import 'base';
+// 头部
+
+// @vw: 3.75vw;
+header {
+    // 固定定位
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 22.097vw;
+    background-color: #fff;
+}
+@color: pink;
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vw;
+    padding-left: 2.4vw;
+    padding-right: 1.6vw;
+    // background-color: aqua;
+    .left {
+        .iconfont {
+            font-size: 8vw;
+            color: @color;
+        }
+    }
+    .right {
+        display: flex;
+        .iconfont {
+            font-size: 5.3333vw;
+            color: #ccc;
+        }
+        .login {
+            width: 5.3333vw;
+            height: 5.3333vw;
+            margin-left: 5.3333vw;
+        }
+        .download {
+            width: 15vw;
+            height: 6.2vw;
+            margin-left: 6.2vw;
+        }
+    }
+}
+.buttom {
+    display: flex;
+    justify-content: space-between;
+    height: 9.677vw;
+    border-bottom: 0.2667vw solid #ccc;
+    
+    .tab {
+        position: relative;
+        ul{
+            display: flex;
+            width: 100vw;
+            overflow-x: auto;
+            li {
+                
+                padding: 0 2.1333vw;
+                a {
+                    display: block;
+                    white-space: nowrap;
+                    height: 9.867vw;
+                    line-height: 9.867vw;
+                    font-size: 3.8667vw;
+                    &.current {
+                        color: @color;
+                        border-bottom: 2px solid @color;
+                    }
+                }
+            }
+        }
+    }
+    .more {
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        bottom: 2.6667vw;
+        width: 8vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            display: block;
+            // width: 10.667vw;
+            // height: 10.667vw;
+            // text-align: center;
+            // line-height: 10.667vw;
+            font-size: 5.333vw;
+            color: #ccc;
+        }
+    }
+}
+
+// 视频内容
+.video_content {
+    padding: 23.2vw 0.6667vw 9.2vw 0.6667vw;
+    .video_list {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            width: 50%;
+            padding: 1.0667vw 0.6667vw;
+            // background-color: pink;
+            font-size: 1.6vw;
+            .pic {
+                position: relative;
+                .count {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 1.0667vw;
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+                    color: #fff;
+                    i {
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .txt {
+                margin-top: 0.6667vw;
+                display: -webkit-box;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+    .more {
+        height: 4vw;
+        line-height: 12vw;
+        text-align: center;
+        color: #999;
+        font-size: 3.2vw;
+    }
+}
+// 固定内容
+footer {
+    font-size: 3.2vw;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #999;
+    line-height: 8vw;
+    padding: 0 0;
+}
+.app {
+    position: fixed;
+    left: 0;
+    bottom: 5.3333vw;
+    width: 89.3333vw;
+    height: 10.6667vw;
+    z-index: 1;
+    // width: 100%;
+    margin-left: 5.3333vw;
+    height: 11.2vw;
+    background-color: #fb7299;
+    border-radius: 5.3333vw;
+    text-align: center;
+    line-height: 10.6667vw;
+    color: #fff;
+    
+}

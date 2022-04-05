@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            margin: 100px auto;
+            
+        }
+        .box1 {
+            display: flex;
+            /* 水平居中 */
+            justify-content: center;
+            /* 垂直居中 */
+            align-items: center;
+        }
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        .box2 {
+            position: relative;
+        }
+        .box2 span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <span>hellow</span>
+    </div>
+    <div class="box2">
+        <span>hellow</span>
+    </div>
+</body>
+</html>

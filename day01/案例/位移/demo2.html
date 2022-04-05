@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+            margin: 0 auto; 
+            /* 过度 */
+            transition: all .9s;   
+            transform-origin: left bottom;        
+        }
+        .box img {
+            width: 300px;
+            height: 300px;
+            /* 过度 */
+            
+        }
+        .box:hover {
+            /* 旋转度数 */
+            transform: rotate(-360deg);
+        }
+        .box1 {
+            width: 500px;
+            height: 100px;
+            border: 1px solid orange;
+            margin: 0 auto;
+        }
+        .box1 img {
+            width: 100px;
+            height: 100px;
+            transition: all .8s;
+        }
+        .box1 img:hover{
+            transform: translateX(400px) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/rotate.png" alt="">
+    </div>
+    <div class="box1">
+        <img src="./images/tyre.png" alt="">
+    </div>
+</body>
+</html>

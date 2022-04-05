@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: aqua;
+        }
+        @media screen and (max-width:400px) {
+
+        }
+        @media screen and (min-width:400px) and (max-width:800px) {
+            div {
+                width: 50%;
+                float: left;
+            }
+        }
+        @media screen and (min-width:800px) {
+            div {
+                width: 25%;
+                float: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>11</div>
+    <div>21</div>
+    <div>31</div>
+    <div>41</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@color : pink;
+@size: 30px;
+div {
+    width: 30px + 10px;
+    width: 30px * 30px;
+    height: 90px - 30px;
+    height: (90px / 9px);
+    height: (90px / @size);
+    color: @color;
+    border: 1px solid @color;
+}
+p {
+    color: @color;
+}
+.pic(@a1,@a2) {
+    background-image: url(2.png);
+    box-sizing: 100%;
+    background-repeat: no-repeat;
+    background-position: @a1 @a2;
+}
+div {
+    .pic(-300px, 30px);
+}
+p {
+    .pic(-300px, 30px);
+}

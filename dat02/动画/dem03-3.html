@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no"
+    />
+    <title>index.html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 1440px;
+        height: 270px;
+        background-color: aqua;
+        margin: 200px auto;
+        overflow: hidden;
+      }
+      .inner {
+        /* 需要加上三张图片的宽度 */
+        width: 4800px;
+        height: 270px;
+
+        animation: move 3s linear infinite;
+      }
+
+      @keyframes move {
+        100% {
+          transform: translateX(-3360px);
+        }
+      }
+      img {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inner">
+        <img src="./images/1.jpg" alt="" />
+        <img src="./images/2.jpg" alt="" />
+        <img src="./images/3.jpg" alt="" />
+        <img src="./images/4.jpg" alt="" />
+        <img src="./images/5.jpg" alt="" />
+        <img src="./images/6.jpg" alt="" />
+        <img src="./images/7.jpg" alt="" />
+
+        <!-- 技巧 故意增加前面张三张图片下去 -->
+        <img src="./images/1.jpg" alt="" />
+        <img src="./images/2.jpg" alt="" />
+        <img src="./images/3.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
+<!-- 
+  1 静态 html结构
+    box 显示 边框 里面 大的div 存放多个小图片 后期移动的时候 只移动装着小图片的盒子就行 
+
+  2 动态效果
+    1 inner盒子 从右往左移动  
+
+  3 无缝滚动 技巧
+    1 两个大盒子
+      1 外层盒子 设置 眼看宽度和高度 
+      2 里层盒子 用来存放多张图片（里面要存放多少张图片 设置宽度为多少！！ ）
+    2 真实存放的图片张数 比实际的要多
+      1 多多少 看你一下的外层盒子能装几张 （浮动）
+    3 设置动画
+      1 设置内层盒子的位移 等于 真实的那几张图片的位移！ 
+      2 设置动画无线滚动！！ 
+ -->

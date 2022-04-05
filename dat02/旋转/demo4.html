@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no"
+    />
+    <title>07-立方体.html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        /* background-color: aqua; */
+        position: relative;
+        margin: 100px auto;
+        transform-style: preserve-3d;
+        transform: rotate3d(1, 1, 1, 0deg);
+      }
+      .box div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .front {
+          transform: translateZ(-100px);
+          background-color: salmon;
+
+      }
+      .back {
+        transform: translateZ(100px);
+        background-color: seagreen;
+      }
+      .left {
+        transform: translateX(-100px) rotateY(90deg);
+        background-color: lawngreen;
+      }
+      .right {
+        transform: translateX(100px) rotateY(90deg);
+        background-color: yellow;
+      }
+      .up {
+        transform: translateY(-100px) rotateX(90deg);
+        background-color: aqua;
+      }
+      .bottom {
+        transform: translateY(100px) rotateX(90deg);
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="front">前</div>
+      <div class="back">后</div>
+      <div class="left">左</div>
+      <div class="right">右</div>
+      <div class="up">上</div>
+      <div class="bottom">下</div>
+    </div>
+  </body>
+</html>
+<!-- 
+  1 静态结构
+    1 定一个父盒子 box 包装着6个小 平面 （立方体 有6个面）
+    2 写6个面 
+      1 先使用定位 来重叠在一起 （方便后面一个一个的调整他们的位置 构造立方体 ）
+
+  2 使用 空间变换来实现 立方体！！ 
+    1 前： z轴 正 移动   +100
+    2 后： z轴 负 移动   -100  
+
+  3 提前检查一下 有效果
+    1 给box 开启立体空间效果-立体呈现 3d呈现  
+    2 给box 旋转 
+
+
+
+  4 同学做一件事
+    1 拿到老师的代码的模版 也实现到 老师现在的案例的进度 即可 
+
+
+  
+ -->
